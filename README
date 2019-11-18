@@ -1,0 +1,53 @@
+This README file contains information on the contents of the meta-rpi-cam-web-interface layer.
+
+Please see the corresponding sections below for details.
+
+Dependencies
+============
+
+  URI: <first dependency>
+  branch: <branch name>
+
+  URI: <second dependency>
+  branch: <branch name>
+
+  .
+  .
+  .
+
+Patches
+=======
+
+Please submit any patches against the meta-rpi-cam-web-interface layer to the xxxx mailing list (xxxx@zzzz.org)
+and cc: the maintainer:
+
+Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
+
+Table of Contents
+=================
+
+  I. Adding the meta-rpi-cam-web-interface layer to your build
+ II. Misc
+
+
+I. Adding the meta-rpi-cam-web-interface layer to your build
+=================================================
+
+Run 'bitbake-layers add-layer meta-rpi-cam-web-interface'
+
+II. Misc
+========
+
+--- replace with specific information about the meta-rpi-cam-web-interface layer ---
+
+
+
+TODO:
+Create recipes:
+GPAC: github.com/gpac/gpac/tree/v0.8.0
+Motion: https://github.com/Motion-Project/motion
+
+Add dependencies:
+apache2 $phpv $phpv-cli libapache2-mod-$phpv gpac motion zip gstreamer1.0-tools
+
+
