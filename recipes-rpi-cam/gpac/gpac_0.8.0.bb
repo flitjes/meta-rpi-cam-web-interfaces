@@ -9,7 +9,6 @@ S = "${WORKDIR}/git"
 DEPENDS_append = " zlib strace libx11"
 
 do_configure(){
-#	sed -i 's,./configure, ./configure "$@",' run_configure.sh
 	./configure --prefix=../sysroot-recipe/usr --libdir=lib/ --mandir=\$${prefix}/share/man --extra-cflags="-Wall -fPIC -DPIC" --enable-joystick --enable-debug --disable-ssl --verbose --X11-path=../sysroot-recipe/usr/X11R6/lib
 
 }
@@ -17,6 +16,7 @@ do_configure(){
 do_compile(){
 	make ${PARALLEL_MAKE}
 }
+
 do_install() {
 	make install 'DESTDIR=${D}'
 }
