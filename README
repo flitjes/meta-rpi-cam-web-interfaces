@@ -43,10 +43,6 @@ II. Misc
 
 
 TODO:
-Create recipes:
-GPAC: github.com/gpac/gpac/tree/v0.8.0
-https://salsa.debian.org/multimedia-team/gpac/blob/master/debian/rules
-
 Motion: https://github.com/Motion-Project/motion
 https://salsa.debian.org/infinity0/motion/blob/debian/4.2.2-1/debian/rules
 https://github.com/openembedded/openembedded/blob/master/recipes/motion/motion_3.2.11.bb
@@ -54,4 +50,5 @@ https://github.com/openembedded/openembedded/blob/master/recipes/motion/motion_3
 Add dependencies:
 apache2 $phpv $phpv-cli libapache2-mod-$phpv gpac motion zip gstreamer1.0-tools
 
+Finish rpi-cam recipe
 
