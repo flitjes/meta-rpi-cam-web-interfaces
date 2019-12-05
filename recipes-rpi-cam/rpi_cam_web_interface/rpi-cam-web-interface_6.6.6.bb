@@ -9,7 +9,8 @@ S = "${WORKDIR}/git"
 
 RDEPENDS_${PN}_append = " apache2 php php-cli zip gstreamer1.0 "
 
-python do_build() {
+#Fix install
+python do_install() {
     bb.plain("***********************************************");
     bb.plain("*                                             *");
     bb.plain("*  Example recipe created by bitbake-layers   *");
